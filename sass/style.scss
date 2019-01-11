@@ -182,6 +182,11 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 }
 
+.breakk{
+	@media screen and (max-width: $screen-sm ) {
+		display: block;
+	}
+}
 .fh5co-nav {
 	margin: 0;
 	@media screen and (max-width: $screen-sm ) {
