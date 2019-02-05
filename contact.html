@@ -67,21 +67,22 @@
 					<div class="row">
 						<div class="col-md-12 col-offset-0 text-center">
 							<div id="fh5co-logo">
-								<img src="./images/logo.PNG" />
+								<!-- <img src="./images/logo.PNG" /> -->
 								<br>
-								<a href="index.html">Warsaw International Church</a>
-								<h4>34 years of service!</h4>
+								<!-- <a href="index.html">Warsaw International Church</a>
+								<h4>34 years of service!</h4> -->
 							</div>
 						</div>
-						<div class="col-md-12 col-md-offset-0 text-center menu-1">
+						<div class="col-md-12 col-md-offset-0 text-right menu-1">
 							<ul>
+								<img src="./images/logo.PNG" style="margin: 0%; border: 2px solid black; float: left; position: absolute; left: 60px; top: -140px; max-width: 500px; width: 250px;" />
 								<li class="active"><a href="index.html">Home</a></li>
 								<!-- <li><a href="sermons.html">Sermons</a></li> -->
 								<li class="has-dropdown">
 									<a href="#">About</a>
 									<ul class="dropdown">
 										<li><a href="#">Our Pastor</a></li>
-										<li><a href="about.html">Our History</a></li>
+										<li><a href="history.html">Our History</a></li>
 									</ul>
 								</li>
 
@@ -99,11 +100,19 @@
 								<li><a href="donate.html">Donate</a></li>
 
 							</ul>
-						</div>
-					</div>
 
+						</div>
+						<div class="col-md-12 col-offset-0 text-center">
+							<div id="fh5co-logo">
+								<!-- <img src="./images/logo.PNG" /> -->
+								<br>
+								<a href="index.html">Warsaw International Church</a>
+								<h4>34 years of service!</h4>
+							</div>
+						</div>
+
+					</div>
 				</div>
-			</div>
 		</nav>
 		<div class="container-wrap">
 			<div id="fh5co-contact" class="bg-success">
@@ -206,6 +215,18 @@
 	<script src="js/jquery.countTo.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+	<script>$(document).ready(function () {
+			$(window).on("scroll", function () {
+				if ($(window).scrollTop() >= 30) {
+					$(".navbar").addClass("compressed");
+					$(".header-icons-noti").addClass("header-icons-noti2");
+				} else {
+					$(".navbar").removeClass("compressed");
+					$(".header-icons-noti").removeClass("header-icons-noti2");
+				}
+			});
+		});
+	</script>
 
 </body>
 
